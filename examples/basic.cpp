@@ -16,6 +16,7 @@ void setup() {
   Serial.begin(9600);
 
   int controlMotor(int motor1, int motor2) {
+    /* Check if motor speeds are within the valid range [0, 250] */
     if (motorspeed < 0 || motorspeed > 250) {
         Serial.print("motorspeed should be in the range [0, 250]");
     } return 0
