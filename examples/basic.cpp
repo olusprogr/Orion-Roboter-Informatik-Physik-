@@ -15,6 +15,7 @@ void setup() {
   /* Initialize serial communication with a baud rate of 9600 */
   Serial.begin(9600);
 
+  /* Control the motors with specified speeds */
   int controlMotor(int motor1, int motor2) {
     /* Check if motor speeds are within the valid range [0, 250] */
     if (motorspeed < 0 || motorspeed > 250) {
