@@ -17,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  /* Initialize serial communication with a baud rate of 9600 */
+  /* Run motor1 backward and motor2 forward at the specified speed */
   motor1.run(-motorspeed);
   motor2.run(motorspeed);
 
