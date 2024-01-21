@@ -27,7 +27,7 @@ void loop() {
   delay(50);
 
   /* Check if the distance measured by the ultrasonic sensor is less than or equal to 30 cm */
-  if (ultrasonic.distanceCm()<= 30) {
+  if (ultrasonic.distanceCm() <= 30) {
     /* If so, run motor1 forward at a speed of 150, stop motor2, and delay for 3 seconds */
     motor1.run(150);
     motor2.stop();
