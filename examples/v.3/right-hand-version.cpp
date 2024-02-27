@@ -67,7 +67,7 @@ void loop() {
     if (getDistance() <= 50) {               // check for distance, if less than 50,
         moveForward(motorspeed, 10, 1500);  // then move forward
 
-        if (getDistance() <= 10) {              // if still less than 20
+        if (getDistance() <= 10) {              // if still less than 10
             moveBackward(0, motorspeed, 2000);  // then move backward
         }
     }
